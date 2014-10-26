@@ -16,7 +16,7 @@ hyperv-tool
 1. python 安装完成设置环境变量 path, 使可以从cmd中执行执行python命令
 2. wmi, bottle, requests安装，先解压，然后 python setup.py install
 
-++++++++++++++++++++++++++++++++++++++++
+========================================================
 
 2. 安装程序
 拷贝hyperv到服务器本地，盘符根目录下
@@ -61,7 +61,8 @@ python agentctl.py help instance_show
 python agentctl.py help instance_pause
 python agentctl.py help instance_unpause
 python agentctl.py help instance_console 
-# instance console会返回一个命令，比如：
+
+instance console会返回一个命令，比如：
 freerdp download url : http://vmconnect.codeplex.com/
 {"rdp_console": "wfreerdp.exe /vmconnect:7EF512FB-BF28-4F28-BE5D-65175A329CAD /v:<host_ip>:2179"}
 更改 <host_ip>为虚拟机所在hyper-v ip，使用tool文件夹下的 freerdp，解压，并在freerdp目录打开cmd
