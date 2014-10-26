@@ -8,7 +8,7 @@ hyperv-tool
 1. 准备工作
 安装包请看 prepare文件夹
 1.1 安装 python
-1.2 安装 pywin
+1.2 安装 pywin32
 1.3 安装 wmi
 1.4 安装 bottle
 1.5 安装 requests (requests为cli依赖，根据情况选择安装)
@@ -62,6 +62,7 @@ python agentctl.py help instance_pause
 python agentctl.py help instance_unpause
 python agentctl.py help instance_console 
 # instance console会返回一个命令，比如：
+freerdp download url : http://vmconnect.codeplex.com/
 {"rdp_console": "wfreerdp.exe /vmconnect:7EF512FB-BF28-4F28-BE5D-65175A329CAD /v:<host_ip>:2179"}
 更改 <host_ip>为虚拟机所在hyper-v ip，使用tool文件夹下的 freerdp，解压，并在freerdp目录打开cmd
 输入命令：wfreerdp.exe /vmconnect:7EF512FB-BF28-4F28-BE5D-65175A329CAD /v:<host_ip>:2179
